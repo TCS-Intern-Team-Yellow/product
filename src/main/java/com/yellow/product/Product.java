@@ -11,15 +11,15 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long productId;
+    private Long productId;
 
-    String name;
-    String description;
-    String category;
-    String subCategory;
-    Long unitPrice;
-    Blob imageRef;
-    Long quantity;
+    private String name;
+    private String description;
+    private String category;
+    private String subCategory;
+    private Long unitPrice;
+    private Blob imageRef;
+    private Long quantity;
 
     public Long getProductId() {
         return productId;
