@@ -5,7 +5,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.yellow.login.User;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -30,7 +29,7 @@ public class ProductController {
         return productRepo.findById(productId);
     }
     
-    @GetMapping("/remove/{productId}")
+    @DeleteMapping("/remove/{productId}")
     public boolean removeProductDetail(@PathVariable Long productId) {
     	Optional<Product> product=this.getProductDetails(productId);
     	if(product.isPresent()){
