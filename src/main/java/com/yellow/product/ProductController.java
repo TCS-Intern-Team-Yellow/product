@@ -29,6 +29,7 @@ public class ProductController {
         return productRepo.findById(productId);
     }
     
+    
     @DeleteMapping("/remove/{productId}")
     public boolean removeProductDetail(@PathVariable Long productId) {
     	Optional<Product> product=this.getProductDetails(productId);
