@@ -18,7 +18,7 @@ public class Product {
     private String category;
     private String subCategory;
     private Long unitPrice;
-    private Blob imageRef;
+    private String imageRef;
     private Long quantity;
 
     public Long getProductId() {
@@ -69,11 +69,11 @@ public class Product {
         this.unitPrice = unitPrice;
     }
 
-    public Blob getImageRef() {
+    public String getImageRef() {
         return imageRef;
     }
 
-    public void setImageRef(Blob imageRef) {
+    public void setImageRef(String imageRef) {
         this.imageRef = imageRef;
     }
 
