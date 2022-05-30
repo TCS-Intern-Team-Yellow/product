@@ -1,0 +1,4 @@
+com\yellow\product\ProductApplication.class
+com\yellow\product\ProductController.class
+com\yellow\product\ProductRepo.class
+com\yellow\product\Product.class
